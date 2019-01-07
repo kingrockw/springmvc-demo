@@ -13,10 +13,10 @@ public class IndexContrller {
      * 跳转到首页
      * @return
      */
-    @RequestMapping("/index")
-    public ModelAndView index(){
-        return new ModelAndView("index");
-    }
+//    @RequestMapping("/index")
+//    public ModelAndView index(){
+//        return new ModelAndView("index");
+//    }
 
     @RequestMapping("/test")
     @ResponseBody
@@ -25,5 +25,14 @@ public class IndexContrller {
         s.setAge(5);
         s.setName("rock");
         return new ModelAndView("index");
+    }
+
+    @RequestMapping("/get1")
+    @ResponseBody
+    public Object ff(String sss){
+//        Student s = new Student();
+//        s.setAge(5);
+//        s.setName("rock");
+        return sss;
     }
 }
